@@ -3,8 +3,8 @@
 /* Global Styles */
 :root {
 	--primary-color: #1b7ed6;
-	--dark-color: #222222;
-	--light-color: #f4f4f4;
+	--dark-color: #000000;
+	--light-color: #d4d4d4;
 	--danger-color: #dc3545;
 	--success-color: #28a745;
 }

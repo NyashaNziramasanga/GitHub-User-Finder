@@ -48,7 +48,12 @@ class App extends Component {
 				<Navbar title="GitHub User Finder" />
 				<div className="container">
 					<Alert alert={this.state.alert} />
-					<Search searchUsers={this.searchUsers} clearUsers={this.clearUsers} setAlert={this.setAlert} />
+					<Search
+						searchUsers={this.searchUsers}
+						clearUsers={this.clearUsers}
+						setAlert={this.setAlert}
+						showClear={users.length > 0 ? true : false}
+					/>
 					<Users loading={loading} users={users} />
 				</div>
 			</div>
