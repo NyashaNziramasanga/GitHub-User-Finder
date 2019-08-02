@@ -312,9 +312,20 @@ img {
 }
 
 /* Forms */
+.forms {
+	display: flex;
+}
+
 input {
-	margin: 1.2rem 0;
-	text-align: center;
+	border-radius: 3px 0px 0px 3px;
+}
+
+.search-btn {
+	border-radius: 0px 3px 3px 0px;
+}
+::placeholder {
+	color: #ccc;
+	padding: 10px;
 }
 
 .form-text {
