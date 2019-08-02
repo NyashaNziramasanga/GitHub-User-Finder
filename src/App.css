@@ -347,7 +347,7 @@ textarea {
 	padding: 0.4rem;
 	font-size: 1.2rem;
 	border: 1px solid #ccc;
-	background-color: var(--light-color);
+	background-color: var(--white-color);
 }
 
 input[type='submit'],
