@@ -30,7 +30,7 @@ export class Search extends Component {
 	render() {
 		const { showClear, clearUsers } = this.props;
 		return (
-			<div>
+			<div style={{ marginTop: '20px' }}>
 				<form onSubmit={this.onSubmit} className="forms">
 					<input type="text" name="text" placeholder="Search" value={this.state.text} onChange={this.onChange} />
 					<button type="submit" value="search" className="fas fa-search btn search-btn" />
