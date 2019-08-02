@@ -209,7 +209,7 @@ img {
 	margin-right: 0.5rem;
 	transition: opacity 0.2s ease-in;
 	outline: none;
-	border-radius: 2px;
+	border-radius: 5px;
 }
 
 .btn-link {
@@ -246,7 +246,7 @@ img {
 	opacity: 0.9;
 	background: var(--light-color);
 	color: #333;
-	border-radius: 2px;
+	border-radius: 5px;
 }
 
 .btn-primary,
@@ -317,11 +317,11 @@ img {
 }
 
 input {
-	border-radius: 3px 0px 0px 3px;
+	border-radius: 5px 0px 0px 5px;
 }
 
 .search-btn {
-	border-radius: 0px 3px 3px 0px;
+	border-radius: 0px 5px 5px 0px;
 }
 ::placeholder {
 	color: #ccc;
