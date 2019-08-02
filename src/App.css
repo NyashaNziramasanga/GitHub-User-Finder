@@ -7,6 +7,7 @@
 	--light-color: #d4d4d4;
 	--danger-color: #dc3545;
 	--success-color: #28a745;
+	--white-color: #ffffff;
 }
 
 * {
@@ -314,6 +315,7 @@ img {
 /* Forms */
 .forms {
 	display: flex;
+	margin: 10px 0px;
 }
 
 input {
@@ -324,7 +326,7 @@ input {
 	border-radius: 0px 5px 5px 0px;
 }
 ::placeholder {
-	color: #ccc;
+	color: #929292;
 	padding: 10px;
 }
 
@@ -345,11 +347,16 @@ textarea {
 	padding: 0.4rem;
 	font-size: 1.2rem;
 	border: 1px solid #ccc;
+	background-color: var(--light-color);
 }
 
 input[type='submit'],
 button {
 	font: inherit;
+}
+
+input:focus {
+	background-color: var(--white-color);
 }
 
 table th,
@@ -379,7 +386,7 @@ table th {
 }
 
 .navbar a {
-	color: #fff;
+	color: var(--white-color);
 	padding: 0.45rem;
 	margin: 0 0.25rem;
 }
