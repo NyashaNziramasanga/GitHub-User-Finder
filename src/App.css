@@ -32,7 +32,7 @@ a {
 }
 
 a:hover {
-  color: var(#000000);
+  color: var(--dark-color);
 }
 
 ul {
@@ -117,10 +117,10 @@ img {
 /* Cards */
 .card {
   padding: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(var(--grey-colour));
   margin: 0.7rem 0;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: var(--white-color);
 }
 
 /* List */
