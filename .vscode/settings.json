@@ -8,6 +8,7 @@
   "files.trimTrailingWhitespace": true,
   "editor.useTabStops": true,
   "files.insertFinalNewline": true,
+  "emmet.triggerExpansionOnTab": true,
   "editor.rulers": [
     100
   ],
