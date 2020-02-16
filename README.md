@@ -2,6 +2,16 @@
 
 React App to search Github profiles
 
+## Screenshots
+
+### 👥 Github User List
+
+![Github user list](images/profiles.png)
+
+### 👤 Github User Details
+
+![Github profile details](images/profile.png)
+
 ## Usage
 
 ```bash
@@ -15,16 +25,6 @@ npm start
 # Builds app for production to the build folder.
 npm run build
 ```
-
-## Screenshots
-
-### 👥 Github User List
-
-![Github user list](images/profiles.png)
-
-### 👤 Github User Details
-
-![Github profile details](images/profile.png)
 
 ## Reference
 
