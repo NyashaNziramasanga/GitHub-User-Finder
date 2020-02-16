@@ -3,13 +3,29 @@
 React App to search Github profiles
 
 ## Usage
-```npm install```
-```npm start```
-Runs the app in the development mode.
-Open http://localhost:3000
 
-```npm run build```
+```bash
+# Runs the app in the development mode.
+# Opens http://localhost:3000
+npm install
+npm start
+```
 
-Builds app for production to the build folder.
+```bash
+# Builds app for production to the build folder.
+npm run build
+```
 
-Inspired by [BradTraversy](https://github.com/bradtraversy/github-finder)
+## Screenshots
+
+### 👥 Github User List
+
+![Github user list](images/profiles.png)
+
+### 👤 Github User Details
+
+![Github profile details](images/profile.png)
+
+## Reference
+
+Inspired by [BradTraversy](https://github.com/bradtraversy/github-finder) github finder project
