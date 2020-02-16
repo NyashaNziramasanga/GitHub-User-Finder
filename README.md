@@ -1,6 +1,6 @@
 # :mag_right: GitHub User Finder :mag_right:
 
-React App to search Github profiles
+React App to search Github user profiles
 
 ## Screenshots
 
