@@ -29,6 +29,7 @@ $ npm run build
 ## Built With
 
 - [React](https://reactjs.org/)
+- [GitHub API](https://developer.github.com/v3/)
 - [Font Awesome](https://fontawesome.com/)
 
 ## Reference
