@@ -1,4 +1,4 @@
-# :mag_right: GitHub User Finder :mag_right:
+# 🔍 GitHub User Finder 🔍
 
 React App to search Github user profiles
 
@@ -12,20 +12,25 @@ React App to search Github user profiles
 
 ![Github profile details](images/profile.png)
 
-## Usage
+## Getting Started
 
 ```bash
 # Runs the app in the development mode.
 # Opens http://localhost:3000
-npm install
-npm start
+$ npm install
+$ npm start
 ```
 
 ```bash
 # Builds app for production to the build folder.
-npm run build
+$ npm run build
 ```
+
+## Built With
+
+- [React](https://reactjs.org/)
+- [Font Awesome](https://fontawesome.com/)
 
 ## Reference
 
-Inspired by [BradTraversy](https://github.com/bradtraversy/github-finder) github finder project
+- [BradTraversy - Github Finder](https://github.com/bradtraversy/github-finder)
