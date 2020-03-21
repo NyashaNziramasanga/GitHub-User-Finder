@@ -9,8 +9,7 @@ export class Search extends Component {
   static propTypes = {
     searchUsers: PropTypes.func.isRequired,
     clearUsers: PropTypes.func.isRequired,
-    setAlert: PropTypes.func.isRequired,
-    setClear: PropTypes.bool.isRequired
+    setAlert: PropTypes.func.isRequired
   };
 
   onSubmit = (e) => {
@@ -32,8 +31,18 @@ export class Search extends Component {
     return (
       <div style={{ marginTop: '20px' }}>
         <form onSubmit={this.onSubmit} className="forms">
-          <input type="text" name="text" placeholder="Search" value={this.state.text} onChange={this.onChange} />
-          <button type="submit" value="search" className="fas fa-search btn search-btn" />
+          <input
+            type="text"
+            name="text"
+            placeholder="Search"
+            value={this.state.text}
+            onChange={this.onChange}
+          />
+          <button
+            type="submit"
+            value="search"
+            className="fas fa-search btn search-btn"
+          />
 
           {showClear && (
             <button className="btn btn-light btn-block" onClick={clearUsers}>

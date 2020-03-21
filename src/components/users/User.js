@@ -10,7 +10,6 @@ export class user extends Component {
 
   static propTypes = {
     loading: PropTypes.bool,
-    user: PropTypes.object.isRequired,
     getUser: PropTypes.func.isRequired
   };
 
@@ -41,11 +40,20 @@ export class user extends Component {
         <Link to="/" className="btn btn-light">
           Back To Search
         </Link>
-        Hireable: {' '}
-        {hireable ? <i className="fas fa-check text-success" /> : <i className="fas fa-times-circle text-dancger" />}
+        Hireable:{' '}
+        {hireable ? (
+          <i className="fas fa-check text-success" />
+        ) : (
+          <i className="fas fa-times-circle text-dancger" />
+        )}
         <div className="card grid-2">
           <div className="all-center">
-            <img src={avatar_url} alt="" className="round-img" style={{ width: '150px' }} />
+            <img
+              src={avatar_url}
+              alt=""
+              className="round-img"
+              style={{ width: '150px' }}
+            />
             <h1>{name}</h1>
             <p>Location: {location}</p>
           </div>
@@ -56,7 +64,12 @@ export class user extends Component {
                 <p>{bio}</p>
               </Fragment>
             )}
-            <a href={html_url} target="_blank" rel="noreferrer noopener" no className="btn btn-dark my-1">
+            <a
+              href={html_url}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="btn btn-dark my-1"
+            >
               Visit Github Profile
             </a>
             <ul>
