@@ -1,5 +1,7 @@
 # 🔍 GitHub User Finder 🔍
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7b90c5b8-1f43-4697-974b-a23a3618de1d/deploy-status)](https://app.netlify.com/sites/github-user-finder-web/deploys)
+
 React App to search Github user profiles
 
 ## Screenshots
@@ -28,7 +30,7 @@ $ npm run build
 
 ## Built With
 
-- [React](https://reactjs.org/)
+- [React.js](https://reactjs.org/)
 - [GitHub API](https://developer.github.com/v3/)
 - [Font Awesome](https://fontawesome.com/)
 
