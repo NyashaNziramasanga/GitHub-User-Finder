@@ -1,9 +1,11 @@
-import React, { Fragment, useEffect } from 'react';
-import Spinner from '../layout/Spinner';
-import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import GithubContext from '../../context/github/githubContext';
+import React, { Fragment, useEffect, useContext } from 'react';
+import Spinner from '../layout/Spinner';
 
-const User = ({ user, loading, getUser, match }) => {
+const User = ({ match }) => {
+  const { getUser, loading, user } = useContext(GithubContext);
+
   useEffect(() => {
     getUser(match.params.login);
     // eslint-disable-next-line
@@ -60,9 +62,9 @@ const User = ({ user, loading, getUser, match }) => {
             href={html_url}
             target="_blank"
             rel="noreferrer noopener"
-            className="btn btn-dark my-1"
+            className="btn btn-primary my-1"
           >
-            Visit Github Profile
+            <i class="fas fa-external-link-alt"></i> Visit Github Profile
           </a>
           <ul>
             <li>
@@ -90,18 +92,17 @@ const User = ({ user, loading, getUser, match }) => {
         </div>
       </div>
       <div className="card text-center">
-        <div className="badge badge-primary">Followers: {followers}</div>
-        <div className="badge badge-success">Followers: {following}</div>
-        <div className="badge badge-danger">Public Repos: {public_repos}</div>
-        <div className="badge badge-dark">Public Gists: {public_gists}</div>
+        <div className="badge badge-secondary">Followers: {followers}</div>
+        <div className="badge badge-secondary">Followers: {following}</div>
+        <div className="badge badge-secondary">
+          Public Repos: {public_repos}
+        </div>
+        <div className="badge badge-secondary">
+          Public Gists: {public_gists}
+        </div>
       </div>
     </Fragment>
   );
-};
-
-User.propTypes = {
-  loading: PropTypes.bool,
-  getUser: PropTypes.func.isRequired
 };
 
 export default User;
