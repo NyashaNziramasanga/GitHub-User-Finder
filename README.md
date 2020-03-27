@@ -1,6 +1,6 @@
 # 🔍 GitHub User Finder 🔍
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7b90c5b8-1f43-4697-974b-a23a3618de1d/deploy-status)](https://app.netlify.com/sites/github-user-finder-web/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7b90c5b8-1f43-4697-974b-a23a3618de1d/deploy-status)](https://app.netlify.com/sites/github-user-finder-web/deploys) [![time tracker](https://wakatime.com/badge/github/NyashaNziramasanga/GitHub-User-Finder.svg)](https://wakatime.com/badge/github/NyashaNziramasanga/GitHub-User-Finder)
 
 React App to search Github user profiles
 
