@@ -2,12 +2,16 @@ import { Link } from 'react-router-dom';
 import GithubContext from '../../context/github/githubContext';
 import React, { Fragment, useEffect, useContext } from 'react';
 import Spinner from '../layout/Spinner';
+import Repos from '../repos/Repos';
 
 const User = ({ match }) => {
-  const { getUser, loading, user } = useContext(GithubContext);
+  const { getUserRepos, repos, getUser, loading, user } = useContext(
+    GithubContext
+  );
 
   useEffect(() => {
     getUser(match.params.login);
+    getUserRepos(match.params.login);
     // eslint-disable-next-line
   }, []);
 
@@ -64,7 +68,7 @@ const User = ({ match }) => {
             rel="noreferrer noopener"
             className="btn btn-primary my-1"
           >
-            <i class="fas fa-external-link-alt"></i> Visit Github Profile
+            <i className="fas fa-external-link-alt"></i> Visit Github Profile
           </a>
           <ul>
             <li>
@@ -100,6 +104,9 @@ const User = ({ match }) => {
         <div className="badge badge-secondary">
           Public Gists: {public_gists}
         </div>
+      </div>
+      <div className="card-grid">
+        <Repos repos={repos} />
       </div>
     </Fragment>
   );

@@ -124,6 +124,20 @@ img {
   background-color: var(--white-color);
 }
 
+/* User Repos */
+.card-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.repo-card {
+  padding: 1.5rem;
+  border: 1px solid var(var(--grey-colour));
+  border-radius: 5px;
+  background-color: var(--white-color);
+}
+
 /* List */
 .list {
   margin: 0.5rem 0;

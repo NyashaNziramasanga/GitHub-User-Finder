@@ -2,7 +2,6 @@ import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import About from './components/pages/About';
 import Alert from './components/layout/Alert';
-import axios from 'axios';
 import GithubState from './context/github/githubState';
 import Navbar from './components/layout/Navbar';
 import React, { Fragment, useState } from 'react';
@@ -38,11 +37,7 @@ const App = () => {
                 )}
               />
               <Route exact path="/about" component={About} />
-              <Route
-                exact
-                path="/user/:login"
-                render={(props) => <User {...props} />}
-              />
+              <Route exact path="/user/:login" component={User} />
             </Switch>
           </div>
         </div>
