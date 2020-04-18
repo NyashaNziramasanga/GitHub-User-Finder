@@ -8,15 +8,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7b90c5b8-1f43-4697-974b-a23a3618de1d/deploy-status)](https://app.netlify.com/sites/github-user-finder-web/deploys) [![time tracker](https://wakatime.com/badge/github/NyashaNziramasanga/GitHub-User-Finder.svg)](https://wakatime.com/badge/github/NyashaNziramasanga/GitHub-User-Finder)
 [![Maintainability](https://api.codeclimate.com/v1/badges/9b45cbe9c289c712a72e/maintainability)](https://codeclimate.com/github/NyashaNziramasanga/GitHub-User-Finder/maintainability)
 
-## Screenshots
-
-### 👥 Github User List
-
-![Github user list](images/profiles.png)
-
-### 👤 Github User Details
-
-![Github profile details](images/profile.png)
+![github-user-profile](assets/github-user-profile.gif)
 
 ## Getting Started
 
