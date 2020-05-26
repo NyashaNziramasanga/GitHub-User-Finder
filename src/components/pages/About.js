@@ -25,7 +25,7 @@ const About = () => {
             </a>
           </p>
           <p>
-            Built with
+            Built with 
             <a target="_blank" rel="noreferrer noopener" href={url.REACTJS_URL}>
               React.js
             </a>
