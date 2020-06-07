@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function UserItem({ user: { login, avatar_url } }) {
+export const UserItem = ({ user: { login, avatar_url } }) => {
   return (
     <Link to={`/user/${login}`} className="card">
       <div className="text-center">
@@ -15,6 +15,4 @@ function UserItem({ user: { login, avatar_url } }) {
       </div>
     </Link>
   );
-}
-
-export default UserItem;
+};

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const RepoItem = ({ repo }) => {
+export const RepoItem = ({ repo }) => {
   return (
     <a target="_blank" rel="noreferrer noopener" href={repo.html_url}>
       <div className="repo-card">
@@ -15,5 +15,3 @@ const RepoItem = ({ repo }) => {
     </a>
   );
 };
-
-export default RepoItem;

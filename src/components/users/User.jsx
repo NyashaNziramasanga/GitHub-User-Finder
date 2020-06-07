@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 import GithubContext from '../../context/github/githubContext';
 import React, { Fragment, useEffect, useContext } from 'react';
-import Spinner from '../layout/Spinner';
-import Repos from '../repos/Repos';
+import { Spinner } from '../layout/Spinner';
+import { Repos } from '../repos/Repos';
 
-const User = ({ match }) => {
+export const User = ({ match }) => {
   const { getUserRepos, repos, getUser, loading, user } = useContext(
     GithubContext
   );
@@ -28,7 +28,7 @@ const User = ({ match }) => {
     following,
     public_repos,
     public_gists,
-    hireable
+    hireable,
   } = user;
 
   if (loading) return <Spinner />;
@@ -111,5 +111,3 @@ const User = ({ match }) => {
     </Fragment>
   );
 };
-
-export default User;

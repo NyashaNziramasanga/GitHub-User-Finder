@@ -1,16 +1,16 @@
+import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import About from './components/pages/About';
-import Alert from './components/layout/Alert';
+import { About } from './components/pages/About';
+import { Alert } from './components/layout/Alert';
 import AlertState from './context/alert/alertState';
 import GithubState from './context/github/githubState';
-import Home from './components/pages/Home';
-import Navbar from './components/layout/Navbar';
-import React from 'react';
-import User from './components/users/User';
-import NotFound from './components/pages/NotFound';
+import { Home } from './components/pages/Home';
+import { Navbar } from './components/layout/Navbar';
+import { User } from './components/users/User';
+import { NotFound } from './components/pages/NotFound';
 
-const App = () => {
+export const App = () => {
   return (
     <GithubState>
       <AlertState>
@@ -32,4 +32,3 @@ const App = () => {
     </GithubState>
   );
 };
-export default App;

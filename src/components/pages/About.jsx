@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-const About = () => {
+export const About = () => {
   const url = {
     GITHUB_USER_FINDER_URL:
       'https://github.com/NyashaNziramasanga/GitHub-User-Finder',
@@ -25,7 +25,7 @@ const About = () => {
             </a>
           </p>
           <p>
-            Built with 
+            Built with
             <a target="_blank" rel="noreferrer noopener" href={url.REACTJS_URL}>
               React.js
             </a>
@@ -35,5 +35,3 @@ const About = () => {
     </Fragment>
   );
 };
-
-export default About;

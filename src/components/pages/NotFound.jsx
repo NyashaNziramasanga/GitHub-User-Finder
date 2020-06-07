@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NotFound = () => {
+export const NotFound = () => {
   return (
     <div style={{ textAlign: 'center' }}>
       <h1>Not Found</h1>
@@ -13,4 +13,3 @@ const NotFound = () => {
     </div>
   );
 };
-export default NotFound;
