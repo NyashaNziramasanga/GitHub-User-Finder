@@ -22,6 +22,7 @@ export const Search = () => {
 
   return (
     <div style={{ marginTop: '20px' }}>
+      <label>Enter Github Username:</label>
       <form onSubmit={onSubmit} className="forms">
         <input
           type="text"
